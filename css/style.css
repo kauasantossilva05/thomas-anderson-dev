@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+:root{
+    --cor-de-fundo: #000000;
+    --cor-primaria: #00ff41;
+
+    --fonte-principal: 'Inconsolata', monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+}
