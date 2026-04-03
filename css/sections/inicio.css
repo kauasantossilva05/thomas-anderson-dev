@@ -1,0 +1,118 @@
+.apresentacao{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 10px;
+}
+
+.apresentacao__insert{
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+.apresentacao__supertitulo{
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.apresentacao__titulo{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.apresentacao__subtitulo{
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.apresentacao__descricao{
+    max-width: 650px;
+    font-size: 0.9rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.apresentacao__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.apresentacao__sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao__links__button__navegacao{
+    width: 120px;
+    padding: 2px 15px;
+    border: 1px solid var(--cor-primaria);
+    background-color: transparent;
+    color: var(--cor-primaria);
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.apresentacao__links__button__navegacao:hover,
+.apresentacao__links__button__navegacao.destaque:hover{
+    background-color: rgba(0, 255, 65, 0.1);
+}
+
+.apresentacao__links__button__navegacao.destaque {
+    background-color: var(--cor-primaria);
+    color: #000;
+    font-weight: bold;
+}
+
+.apresentacao__links__navegacao{
+    color: var(--cor-primaria);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao__links__navegacao:hover{
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__sociais i{
+    font-size: 1.5rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

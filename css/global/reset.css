@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

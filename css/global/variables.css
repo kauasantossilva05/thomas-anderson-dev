@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+:root{
+    --cor-de-fundo: #000000;
+    --cor-primaria: #00ff41;
+    --cor-secundaria: #008f11;
+    --cor-borda: rgba(0, 255,65, 0.2);
+
+    --fonte-principal: 'Inconsolata', monospace;
+}

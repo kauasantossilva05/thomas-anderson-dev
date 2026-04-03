@@ -6,63 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas A. Anderson</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='black'/><text y='75' x='5' font-family='monospace' font-size='70' fill='%2300FF41' font-weight='bold'>%3E_</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <main>
         <section id="inicio" class="apresentacao">
             <h1 class="apresentacao__insert">>_</h1>
-            <h1 class="apresentacao__supertituloulo">Neo</h1>
-            <h1 class="apresentacao__tituloulo">Thomas A. Anderson</h1>
+            <h1 class="apresentacao__supertitulo">Neo</h1>
+            <h1 class="apresentacao__titulo">Thomas A. Anderson</h1>
             <h2 class="apresentacao__subtitulo">Full Stack Developer | The One</h2>
-            <p class="apresentacao__descricao">"I know kung fu... and JavaScript, Python, React, and how to bend the
-                Matrix to my will."</p>
+            <p class="apresentacao__descricao">"Eu sei kung fu... e JavaScript, Python, React, e como dobrar a Matrix à minha vontade."</p>
             <div class="apresentacao__links">
-                <a class="apresentacao__links__button__navegacao" href="">Contato</a>
-                <a class="apresentacao__links__button__navegacao" href="">Projetos</a>
-                <a class="apresentacao__links__navegacao" href="">GitHub</a>
-                <a class="apresentacao__links__navegacao" href="">LinkedIn</a>
+                <div class="apresentacao__button">
+                    <a class="apresentacao__links__button__navegacao" href="#contato">✉ Contato</a>
+                    <a class="apresentacao__links__button__navegacao destaque" href="#projetos">Projetos</a>
+                </div>
+                <div class="apresentacao__sociais">
+                    <a class="apresentacao__links__navegacao" href="">
+                        <i class="fa-brands fa-github"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a class="apresentacao__links__navegacao" href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section id="sobre" class="sobre">
-            <h2 class="sobre__titulo">SOBRE.exe</h2>
-            <p class="sobre__descricao">"I am the One, the chosen one, the savior of humanity. I have been living a
-                double life as a software developer and a hacker, using my skills to fight against the machines that
-                have enslaved humanity. I am a master of martial arts and a skilled programmer, able to bend the rules
-                of reality to my will."</p>
+            <h2 class="sobre__titulo">> SOBRE.exe</h2>
 
-            <!-- Pesquisar se o correto é usar uma div, uma section ou outra para separar aqui -->
-            <section class="sobre__skills">
-                <div class="sobre__skills__frontend">
-                    <h3 class="sobre__skills__icon">\></h3>
-                    <h3 class="sobre__skills__item__titulo">Frontend</h3>
-                    <p class="sobre__skills__item__descricao">React, TypeScript.</p>
+            <div class="sobre__conteudo">
+                <div class="sobre__imagem__container">
+                    <img class="sobre__neo" src="./assests/Neo_matrix.png" alt="Foto do Neo">
                 </div>
-                <div class="sobre__skills__item">
-                    <h3 class="sobre__skills__icon">Back</h3>
-                    <h3 class="sobre__skills__item__titulo">Backend</h3>
-                    <p class="sobre__skills__item__descricao">Node.js, Python</p>
+
+                <div class="sobre__info">
+                    <div class="sobre__biografia">
+                        <p class="sobre__descricao"><span id="icon__descricao">> _</span><br>
+                            "Eu sou o Escolhido, o salvador da humanidade. 
+                            Vivo uma vida dupla como desenvolvedor de software e hacker, 
+                            usando minhas habilidades para lutar contra as máquinas que escravizaram a humanidade.
+                            Sou mestre em artes marciais e um programador habilidoso, capaz de dobrar as regras da realidade à minha vontade."
+                        </p>
+                    </div>
+
+
+                    <section class="sobre__skills">
+                        <div class="sobre__skills__item">
+                            <i class="fa-solid fa-code"></i>
+                            <h3 class="sobre__skills__item__titulo">Frontend</h3>
+                            <p class="sobre__skills__item__descricao">React, TypeScript.</p>
+                        </div>
+                        <div class="sobre__skills__item">
+                            <i class="fa-solid fa-database"></i>
+                            <h3 class="sobre__skills__item__titulo">Backend</h3>
+                            <p class="sobre__skills__item__descricao">Node.js, Python</p>
+                        </div>
+                        <div class="sobre__skills__item">
+                            <i class="fa-solid fa-bitcoin-sign"></i>
+                            <h3 class="sobre__skills__item__titulo">Web3</h3>
+                            <p class="sobre__skills__item__descricao">Blockchain, DApps.</p>
+                        </div>
+                        <div class="sobre__skills__item">
+                            <i class="fa-solid fa-microchip"></i>
+                            <h3 class="sobre__skills__item__titulo">AI/ML</h3>
+                            <p class="sobre__skills__item__descricao">TensorFlow, Pytorch</p>
+                        </div>
+                    </section>
                 </div>
-                <div class="sobre__skills__item">
-                    <h3 class="sobre__skills__icon">Web3</h3>
-                    <h3 class="sobre__skills__item__titulo">Web3</h3>
-                    <p class="sobre__skills__item__descricao">Blockchain, DApps.</p>
-                </div>
-                <div class="sobre__skills__item">
-                    <h3 class="sobre__skills__icon">AI</h3>
-                    <h3 class="sobre__skills__item__titulo">AI/ML</h3>
-                    <p class="sobre__skills__item__descricao">TensorFlow, Pytorch</p>
-            </section>
-            <img class="sobre__neo" src="" alt="Foto do Neo">
+            </div>
+
         </section>
 
         <section id="skills" class="skills">
-            <h2 class="skills__titulo">SKILLS.matrix</h2>
+            <h2 class="skills__titulo">> SKILLS.matrix</h2>
 
             <div class="skills__coluna skills__coluna__proficiencia">
                 <h3>
-                    <span class="skills__subtitulo__destaque">// Technical Proficiency // Hard Skills</span>
+                    <span class="skills__subtitulo__destaque">// Hard Skills</span>
                 </h3>
                 <ul class="skills__lista">
                     <li class="skills__item">
@@ -105,39 +130,39 @@
 
             <div class="skills__coluna skills__coluna__avancado">
                 <h3>
-                    <span class="skills__subtitulo">// Advanced Systems // Soft Skills</span>
+                    <span class="skills__subtitulo">// Soft Skills</span>
                 </h3>
                 <ul class="skills__lista">
                     <li class="skills__item">
                         <p class="skills__label">
-                            <span class="skills__nome">Node.js</span>
-                            <span class="skills__porcentagem">94%</span>
+                            <span class="skills__nome">Aprendizagem rápida</span>
+                            <span class="skills__porcentagem">99%</span>
                         </p>
                         <div class="skill__barra">
-                            <div class="skill__barra__preenchida" style="width: 94%;"></div>
+                            <div class="skill__barra__preenchida" style="width: 99%;"></div>
                         </div>
                     </li>
                     <li class="skills__item">
                         <p class="skills__label">
-                            <span class="skills__nome">PostegreSQL/MongoDB</span>
-                            <span class="skills__porcentagem">91%</span>
+                            <span class="skills__nome">Resolução de Problemas</span>
+                            <span class="skills__porcentagem">99%</span>
                         </p>
                         <div class="skill__barra">
-                            <div class="skill__barra__preenchida" style="width: 91%;"></div>
+                            <div class="skill__barra__preenchida" style="width: 99%;"></div>
                         </div>
                     </li>
                     <li class="skills__item">
                         <p class="skills__label">
-                            <span class="skills__nome">Docker/Kubernetes</span>
-                            <span class="skills__porcentagem">89%</span>
+                            <span class="skills__nome">Adaptabilidade</span>
+                            <span class="skills__porcentagem">96%</span>
                         </p>
                         <div class="skill__barra">
-                            <div class="skill__barra__preenchida" style="width: 89%;"></div>
+                            <div class="skill__barra__preenchida" style="width: 96%;"></div>
                         </div>
                     </li>
                     <li class="skills__item">
                         <p class="skills__label">
-                            <span class="skills__nome">AWS/Cloud</span>
+                            <span class="skills__nome">Trabalho em equipe</span>
                             <span class="skills__porcentagem">92%</span>
                         </p>
                         <div class="skill__barra">
@@ -148,7 +173,7 @@
             </div>
 
             <div class="skills__citacao__container">
-                <p class="skills__citacao">> "There is no spoon. There is only code, and the will to master it." _</p>
+                <p class="skills__citacao">> "Não existe saída. Existe apenas o código e a vontade de dominá-lo." _</p>
             </div>
         </section>
 
@@ -159,74 +184,86 @@
 
                 <div class="projetos__card">
                     <div class="projetos__card__imagem">
-                        <img class="projetos__item__imagem" src="" alt="Imagem do projeto Matrix Decoder">
+                        <img class="projetos__item__imagem" src="./assests/decoder__matrix.png" alt="Imagem do projeto Matrix Decoder">
                     </div>
 
-                    <h3 class="projetos__card__titulo">Matrix Decoder</h3>
+                    <h3 class="projetos__card__titulo">Matrix Decodificador</h3>
                     <p class="projetos__card__descricao">
-                        AI-powered system that decodes and analyzes Matrix code patterns in real-time. Built with
-                        TensorFlow and React.
+                        Sistema com inteligência artificial que decodifica e analisa padrões de código Matrix em tempo real. 
+                        Desenvolvido com TensorFlow e React.
                     </p>
 
                     <ul class="projetos__tags">
-                        <li class="projetos__tag">Python</li>
-                        <li class="projetos__tag">TensorFlow</li>
-                        <li class="projetos__tag">React</li>
-                        <li class="projetos__tag">WebGL</li>
+                        <li class="projetos__tag__item">Python</li>
+                        <li class="projetos__tag__item">TensorFlow</li>
+                        <li class="projetos__tag__item">React</li>
+                        <li class="projetos__tag__item">WebGL</li>
                     </ul>
 
                     <div class="projetos__links">
-                        <a href="#" class="projetos__link">Code</a>
-                        <a href="#" class="projetos__link">Live Demo</a>
+                        <a href="#" class="projetos__link">
+                            <i class="fa-solid fa-code"></i> Code
+                        </a>
+                        <a href="#" class="projetos__link">
+                            <i class="fa-solid fa-laptop"></i> Live Demo
+                        </a>
                     </div>
 
                 </div>
 
                 <div class="projetos__card">
                     <div class="projetos__card__imagem">
-                        <img class="projetos__item__imagem" src="" alt="Imagem do projeto Neural Interface">
+                        <img class="projetos__item__imagem" src="./assests/IA.png" alt="Imagem do projeto Neural Interface">
                     </div>
 
-                    <h3 class="projetos__card__titulo">Neural Interface</h3>
+                    <h3 class="projetos__card__titulo">Interface Neural</h3>
                     <p class="projetos__card__descricao">
-                        Brain-computer interface dashboard for monitoring and controlling digital systems through
-                        thought patterns.
+                        Painel de interface cérebro-computador para monitoramento e controle de sistemas digitais por meio de
+                        padrões de pensamento.
                     </p>
 
                     <ul class="projetos__tags">
-                        <li class="projetos__tag">TypeScript</li>
-                        <li class="projetos__tag">Next.js</li>
-                        <li class="projetos__tag">D3.js</li>
-                        <li class="projetos__tag">WebSockets</li>
+                        <li class="projetos__tag__item">TypeScript</li>
+                        <li class="projetos__tag__item">Next.js</li>
+                        <li class="projetos__tag__item">D3.js</li>
+                        <li class="projetos__tag__item">WebSockets</li>
                     </ul>
 
                     <div class="projetos__links">
-                        <a href="#" class="projetos__link">Code</a>
-                        <a href="#" class="projetos__link">Live Demo</a>
+                        <a href="#" class="projetos__link">
+                            <i class="fa-solid fa-code"></i> Code
+                        </a>
+                        <a href="#" class="projetos__link">
+                            <i class="fa-solid fa-laptop"></i> Live Demo
+                        </a>
                     </div>
 
                 </div>
 
                 <div class="projetos__card">
                     <div class="projetos__card__imagem">
-                        <img class="projetos__item__imagem" src="" alt="Imagem do projeto Blockchain Oracle">
+                        <img class="projetos__item__imagem" src="./assests/Blockchain.png" alt="Imagem do projeto Blockchain Oracle">
                     </div>
 
-                    <h3 class="projetos__card__titulo">Blockchain Oracle</h3>
+                    <h3 class="projetos__card__titulo">Oráculo Blockchain</h3>
                     <p class="projetos__card__descricao">
-                        Decentralized oracle network for secure data validation across blockchain networks.
+                        Rede de oráculos descentralizada para validação segura de dados em redes blockchain.
                     </p>
 
                     <ul class="projetos__tags">
-                        <li class="projetos__tag">Solidity</li>
-                        <li class="projetos__tag">Web3.js</li>
-                        <li class="projetos__tag">Node.js</li>
-                        <li class="projetos__tag">MongoDB</li>
+                        <li class="projetos__tag__item">Solidity</li>
+                        <li class="projetos__tag__item">Web3.js</li>
+                        <li class="projetos__tag__item">Node.js</li>
+                        <li class="projetos__tag__item">MongoDB</li>
                     </ul>
 
                     <div class="projetos__links">
-                        <a href="#" class="projetos__link">Code</a>
-                        <a href="#" class="projetos__link">Live Demo</a>
+                        <a href="#" class="projetos__link">
+                            <i class="fa-solid fa-code"></i> Code
+                        </a>
+                        <a href="#" class="projetos__link">
+                            <i class="fa-solid fa-laptop"></i> Live Demo
+                        </a>
                     </div>
 
                 </div>
@@ -242,13 +279,13 @@
 
                 <div class="contato__info">
                     <p class="contato__descricao">
-                        "If you want to reach out, collaborate on a project, or just say hi, feel free to connect with
-                        me through any of the platforms below."
+                        "Quer tomar a pílula vermelha e colaborar em algo extraordinário? 
+                        Mande-me uma mensagem e vamos juntos romper as barreiras da realidade."
                     </p>
 
-                    <ul class="contato_lista">
+                    <ul class="contato__lista">
                         <li class="contato__cartao">
-                            <span class="contato__cartao__icon">📧</span>
+                            <i class="fa-regular fa-envelope"></i>
                             <div class="contato__detalhes">
                                 <span class="contato__rotulo">Email</span>
                                 <p class="contato__valor">neo@thematrix.com</p>
@@ -256,17 +293,17 @@
                         </li>
 
                         <li class="contato__cartao">
-                            <span class="contato__cartao__icon">📞</span>
+                            <i class="fa-solid fa-phone"></i>
                             <div class="contato__detalhes">
-                                <span class="contato__rotulo">Phone</span>
-                                <p class="contato__valor">+1 (555) 0101-0110</p>
+                                <span class="contato__rotulo">Telefone</span>
+                                <p class="contato__valor">+55 (77) 90101-0110</p>
                             </div>
                         </li>
 
                         <li class="contato__cartao">
-                            <span class="contato__cartao__icon">📍</span>
+                            <i class="fa-solid fa-location-crosshairs"></i>
                             <div class="contato__detalhes">
-                                <span class="contato__rotulo">Location</span>
+                                <span class="contato__rotulo">Localização</span>
                                 <p class="contato__valor">The Matrix, Everywhere</p>
                             </div>
                         </li>
@@ -274,14 +311,14 @@
 
                     <div class="contato__status">
                         <p>> Status: ONLINE</p>
-                        <p>> Response Time: 24h</p>
+                        <p>> Tempo de Resposta: 24h</p>
                     </div>
                 </div>
 
                 <div class="contato__formulario__container">
                     <form class="contato__formulario" action="#" method="POST">
                         <div class="contato__campo">
-                            <label for="nome" class="contato__formulario__label">> Name</label>
+                            <label for="nome" class="contato__formulario__label">> Nome</label>
                             <input type="text" id="nome" name="nome" class="contato__formulario__input"
                                 placeholder="Coloque seu nome..." required>
                         </div>
@@ -293,20 +330,21 @@
                         </div>
 
                         <div class="contato__campo">
-                            <label for="mensagem" class="contato__formulario__label">> Message</label>
+                            <label for="mensagem" class="contato__formulario__label">> Mensagem</label>
                             <textarea id="mensagem" name="mensagem" class="contato__formulario__textarea"
                                 placeholder="Digite sua mensagem aqui..." required></textarea>
                         </div>
 
-                        <button type="submit" class="contato__formulario__botao">Send Message</button>
+                        <button type="submit" class="contato__formulario__botao">Enviar Mensagem</button>
                     </form>
                 </div>
             </div>
+        </section>
     </main>
 
     <footer class="rodape">
-        <p class="rodape__texto">> Built in the Matrix by Neo &copy; 2026.</p>
-        <p class="rodape__citacao">"Free your mind."</p>
+        <p class="rodape__texto">> Construído na Matrix por Neo &copy; 2026.</p>
+        <p class="rodape__citacao">"Liberte sua mente."</p>
     </footer>
 </body>
 

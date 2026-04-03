@@ -1,0 +1,97 @@
+.sobre{
+    min-height: 100vh;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre__titulo{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.sobre__conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.sobre__imagem__container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sobre__neo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display:block;
+    display: block;
+    filter: grayscale(100%) contrast(120%);
+    transition: 0.3s;
+}
+
+.sobre__neo:hover {
+    filter: none;
+}
+
+.sobre__info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sobre__biografia{
+    border: 1px solid var(--cor-borda);
+    padding: 25px;
+    background: rgba(0, 255, 65, 0.02);
+}
+
+#icon__descricao{
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+}
+
+.sobre__descricao{
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--cor-secundaria);
+}
+
+.sobre__skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.sobre__skills__item{
+    border: 1px solid var(--cor-borda);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.sobre__skills__item:hover{
+    border: 1px solid var(--cor-primaria);
+    background-color: rgba(0, 255, 65, 0.02);
+    transform: translateY(-2px);
+}
+
+
+.sobre__skills__item__titulo{
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.sobre__skills__item__descricao{
+    font-size: 0.85rem;
+    color: var(--cor-secundaria);
+}
