@@ -11,7 +11,7 @@ https://thomas-anderson-dev.vercel.app/
 - JavaScript 
 
 ## Funcionalidades 
-Interface com a tematíca inspirada em Matrix🟢
-Layout responsivo📲
-Design moderno💻
-Estrutura simples e organizada 
+- Interface com a tematíca inspirada em Matrix🟢
+- Layout responsivo📲
+- Design moderno💻
+- Estrutura simples e organizada 
